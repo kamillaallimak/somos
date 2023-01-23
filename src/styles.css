@@ -17,3 +17,11 @@ body {
   --navbar-scroll-text: white;
   --navbar-scroll-shadow: none;
 }
+
+:root {
+  --amber: #fec106;
+  --blue: #5eb1bf;
+  --green: #08605f;
+  --purple: #6a0136;
+  --fuschia: #976391;
+}

@@ -56,7 +56,7 @@
   position: relative;
   z-index: 20;
   text-align: center;
-  color: white;
+  color: var(--amber);
 }
 
 #hero .caption h1 {
@@ -92,7 +92,7 @@ nav .container {
 nav .container ul li {
   display: inline-block;
   border-radius: 5px;
-  background-color: rgb(215, 193, 233);
+  background-color: var(--blue);
   border-radius: 30px;
   margin: 5px;
 }
@@ -101,12 +101,12 @@ nav .container ul li a {
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
-  color: black;
+  color: white;
   font-family: "PT Sans", sans-serif;
 }
 
 nav .container ul li.active {
-  background-color: #600cba;
+  background-color: var(--green);
   border-radius: 30px;
   transition: 0.3s;
 }
