@@ -1,0 +1,21 @@
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+  height: 300px; /* only if you want fixed height */
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.buttonDesign {
+  font-size: x-large;
+  font-weight: 600;
+  background: rgb(56, 2, 56);
+  color: white;
+}

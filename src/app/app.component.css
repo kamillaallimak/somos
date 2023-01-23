@@ -1,0 +1,145 @@
+.logo {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  margin: 20px;
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  /* background: rgb(89, 6, 89);*/
+  display: flex;
+  align-items: center; /*center vertically*/
+  justify-content: center; /*center horizontally*/
+}
+
+#hero video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  object-fit: cover;
+  font-family: "object-fit: cover"; /*Object fit cover for Internet explorer - not applied */
+}
+
+#hero::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /*0,0,0 = black, 0.1 seethrough/opacity where 0 is 100% seethrough, and 1 is 0% seethrough*/
+  z-index: 10;
+}
+
+#hero .texture {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  background: url("../assets/images/filters/cross-stripes.png");
+}
+
+#hero .caption {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: white;
+}
+
+#hero .caption h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+#hero .caption h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 20px 20px;
+  z-index: 20;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+nav .container ul li {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: rgb(215, 193, 233);
+  border-radius: 30px;
+  margin: 5px;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  font-family: "PT Sans", sans-serif;
+}
+
+nav .container ul li.active {
+  background-color: #600cba;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+nav .container ul li.active a {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  #hero .caption h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 1.72rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #hero .caption h1 {
+    font-size: 3rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero .caption h1 {
+    font-size: 4rem;
+  }
+
+  #hero .caption h2 {
+    font-size: 2.5rem;
+  }
+}

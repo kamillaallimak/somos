@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "animate.css";
+
+@import "~normalize.css";
+
+/*text-justify: inter-character;*/
+.crispAlign {
+  text-justify: inter-word;
+}
+
+body {
+  /*Font*/
+  font-family: "PT Sans", sans-serif;
+
+  /*Transparent to Opaque scrollbar: https://philipgyllhamn.medium.com/how-to-create-a-transparent-navbar-to-solid-on-scroll-in-angular-11-e0c915bf2318*/
+  --navbar-scroll: transparent;
+  --navbar-scroll-text: white;
+  --navbar-scroll-shadow: none;
+}
