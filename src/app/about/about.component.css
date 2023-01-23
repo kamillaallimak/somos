@@ -1,5 +1,4 @@
 @import "../app.component.css";
-@import url('https://fonts.googleapis.com/css?family=cardso:400i|Rubik:400,700&display=swap');
 
 /**********************/
 .headerStyle {
@@ -13,25 +12,24 @@
   padding: 1rem;
   max-width: 1024px;
   margin: 0 auto;
-  font-family: var(--font-sans);
 }
 
 .about-school .header {
-text-align: center;
+  text-align: center;
 }
-
 
 /***********************ABOUT TEACHERS*******************************************************/
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: 'Rubik', sans-serif;
-  --font-serif: 'cardso', serif;
+  --font-sans: "Rubik", sans-serif;
+  --font-serif: "cardso", serif;
 }
 * {
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -75,7 +73,9 @@ body {
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1),
+    0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 600px) {
   .cards {
@@ -83,7 +83,7 @@ body {
   }
 }
 .cards:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -95,7 +95,7 @@ body {
   pointer-events: none;
 }
 .cards:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -103,21 +103,39 @@ body {
   width: 100%;
   height: 200%;
   pointer-events: none;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.009) 11.7%,
+    rgba(0, 0, 0, 0.034) 22.1%,
+    rgba(0, 0, 0, 0.072) 31.2%,
+    rgba(0, 0, 0, 0.123) 39.4%,
+    rgba(0, 0, 0, 0.182) 46.6%,
+    rgba(0, 0, 0, 0.249) 53.1%,
+    rgba(0, 0, 0, 0.32) 58.9%,
+    rgba(0, 0, 0, 0.394) 64.3%,
+    rgba(0, 0, 0, 0.468) 69.3%,
+    rgba(0, 0, 0, 0.54) 74.1%,
+    rgba(0, 0, 0, 0.607) 78.8%,
+    rgba(0, 0, 0, 0.668) 83.6%,
+    rgba(0, 0, 0, 0.721) 88.7%,
+    rgba(0, 0, 0, 0.762) 94.1%,
+    rgba(0, 0, 0, 0.79) 100%
+  );
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .cards:nth-child(1):before {
-  background-image: url('../../assets/images/dancerWOman1.jpg');
+  background-image: url("../../assets/images/dancerWOman1.jpg");
 }
 .cards:nth-child(2):before {
-  background-image: url('../../assets/images/dancerMan.jpg');
+  background-image: url("../../assets/images/dancerMan.jpg");
 }
 .cards:nth-child(3):before {
-  background-image: url('../../assets/images/dancerWOman2.jpg');
+  background-image: url("../../assets/images/dancerWOman2.jpg");
 }
 .cards:nth-child(4):before {
-  background-image: url('../../assets/images/dancerMan2.jpg');
+  background-image: url("../../assets/images/dancerMan2.jpg");
 }
 .cards-content {
   position: relative;
@@ -174,26 +192,32 @@ body {
     transform: translateY(1rem);
     transition: transform var(--d) var(--e), opacity var(--d) var(--e);
   }
-  .cards:hover, .cards:focus-within {
+  .cards:hover,
+  .cards:focus-within {
     align-items: center;
   }
-  .cards:hover:before, .cards:focus-within:before {
+  .cards:hover:before,
+  .cards:focus-within:before {
     transform: translateY(-4%);
   }
-  .cards:hover:after, .cards:focus-within:after {
+  .cards:hover:after,
+  .cards:focus-within:after {
     transform: translateY(-50%);
   }
-  .cards:hover .cards-content, .cards:focus-within .cards-content {
+  .cards:hover .cards-content,
+  .cards:focus-within .cards-content {
     transform: translateY(0);
   }
-  .cards:hover .cards-content > *:not(.title), .cards:focus-within .cards-content > *:not(.title) {
+  .cards:hover .cards-content > *:not(.title),
+  .cards:focus-within .cards-content > *:not(.title) {
     opacity: 1;
     transform: translateY(0);
     transition-delay: calc(var(--d) / 8);
   }
-  .cards:focus-within:before, .cards:focus-within:after, .cards:focus-within .cards-content, .cards:focus-within .cards-content > *:not(.title) {
+  .cards:focus-within:before,
+  .cards:focus-within:after,
+  .cards:focus-within .cards-content,
+  .cards:focus-within .cards-content > *:not(.title) {
     transition-duration: 0s;
   }
 }
-
-

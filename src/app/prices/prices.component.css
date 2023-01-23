@@ -1,0 +1,15 @@
+.prices-container {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-styling {
+  background: var(--green);
+  color: white;
+}

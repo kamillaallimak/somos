@@ -2,6 +2,7 @@
 @import "animate.css";
 
 @import "~normalize.css";
+@import url("https://fonts.googleapis.com/css?family=cardso:400i|Rubik:400,700&display=swap");
 
 /*text-justify: inter-character;*/
 .crispAlign {
@@ -9,13 +10,7 @@
 }
 
 body {
-  /*Font*/
-  font-family: "PT Sans", sans-serif;
-
-  /*Transparent to Opaque scrollbar: https://philipgyllhamn.medium.com/how-to-create-a-transparent-navbar-to-solid-on-scroll-in-angular-11-e0c915bf2318*/
-  --navbar-scroll: transparent;
-  --navbar-scroll-text: white;
-  --navbar-scroll-shadow: none;
+  font-family: var(--bs-font-sans-serif);
 }
 
 :root {
@@ -24,4 +19,13 @@ body {
   --green: #08605f;
   --purple: #6a0136;
   --fuschia: #976391;
+  /*Font
+  --font-family-PTSans: "PT Sans", sans-serif;
+  --font-family-Oswald: "Oswald", sans-serif;
+  */
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
