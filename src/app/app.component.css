@@ -49,7 +49,7 @@
   top: 0;
   left: 0;
   z-index: 15;
-  background: url("../assets/images/filters/cross-stripes.png");
+  /* background: url("../assets/images/filters/cross-stripes.png");*/
 }
 
 #hero .caption {
