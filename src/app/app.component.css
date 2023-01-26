@@ -78,7 +78,7 @@
 
 nav {
   position: sticky;
-  bottom: var(--navbar-scroll-position);
+  top: 0;
   right: 0;
   z-index: 20;
   background-color: var(--navbar-scroll);
