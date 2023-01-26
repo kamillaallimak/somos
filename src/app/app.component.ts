@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
     window.addEventListener('scroll', this.scroll, true);
   }
 
+  //NAVBAR
   scroll = (): void => {
     let scrollHeigth;
 
@@ -40,4 +41,30 @@ export class AppComponent implements OnInit {
       document.body.style.setProperty('--navbar - scroll - position', '0');
     }
   };
+
+  //ANIMATION ON SCROLL
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  /*
+  options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+observer = new IntersectionObserver(callback, options);
+
+/*
+  hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  */
 }

@@ -7,7 +7,9 @@ import { CoursesComponent } from './courses/courses.component';
 import { PricesComponent } from './prices/prices.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, NgbModule],
+  imports: [BrowserModule, NgbModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
