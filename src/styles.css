@@ -13,6 +13,10 @@
 
 body {
   font-family: var(--bs-font-sans-serif);
+  --navbar-scroll: transparent;
+  --navbar-scroll-text: white;
+  --navbar-scroll-shadow: none;
+  --navbar-scroll-position: 0;
 }
 
 :root {

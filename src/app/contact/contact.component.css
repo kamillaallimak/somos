@@ -1,0 +1,59 @@
+.contact {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.fit-image {
+  /*width: 100%;*/
+  object-fit: cover;
+  height: 300px; /* only if you want fixed height */
+  width: 500px;
+  margin: 0 40px 0 0px;
+}
+
+.fit-adress {
+  /*width: 100%;*/
+  margin: 0 40px 0 10px;
+}
+
+.form-fit {
+  width: 90%;
+  margin: 10px 10px 0 40px;
+  padding: 30px;
+}
+
+.contact-us {
+  margin: 0px 10px 0 70px;
+}
+
+.contact-form-control {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: transparent;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
+  border-radius: 10px;
+}
+
+.message-text {
+  border-radius: 20px;
+  border-color: transparent;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
+  border-radius: 10px;
+}
+
+.submit-btn {
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
+  padding: 10px 30px;
+  background: var(--green);
+  color: white;
+  font-weight: 600;
+  margin: 20px 0 0 130px;
+}

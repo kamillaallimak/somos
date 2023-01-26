@@ -78,10 +78,12 @@
 
 nav {
   position: sticky;
-  bottom: 0;
+  bottom: var(--navbar-scroll-position);
   right: 0;
   z-index: 20;
-  background: var(--green);
+  background-color: var(--navbar-scroll);
+  transition: background-color 0.9s ease-in;
+  color: var(--navbar-scroll-text);
 }
 
 nav .container {
