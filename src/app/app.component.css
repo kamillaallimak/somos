@@ -6,9 +6,6 @@
   margin: 20px;
   background-image: url("../assets/images/WhatsAppLogo.jpeg");
 }
-.cards {
-  background-image: url("../assets/images/WhatsAppLogo.jpeg");
-}
 #hero {
   height: 100vh;
   width: 100%;
@@ -81,13 +78,13 @@ nav {
   top: 0;
   right: 0;
   z-index: 20;
-  background-color: var(--navbar-scroll);
+  background-color: var(--green); /*var(--navbar-scroll);*/
   transition: background-color 0.9s ease-in;
-  color: var(--navbar-scroll-text);
+  /*color: var(--navbar-scroll-text);*/
 }
 
 nav .container {
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;

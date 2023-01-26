@@ -8,7 +8,38 @@
 
 /*text-justify: inter-character;*/
 .crispAlign {
-  text-justify: inter-word;
+  text-align: justify;
+  text-justify: inter-character;
+}
+
+.component {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.component-title {
+  margin: 90px auto 0 auto;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  border: none;
+  background: var(--green);
+  color: white;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
+}
+
+.btn:hover {
+  background: (var(--blue));
 }
 
 body {
@@ -34,4 +65,38 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+}
+
+.somos::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.somos:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.somos::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: var(--amber);
+
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.somos {
+  position: relative;
+}
+
+.full-width {
+  width: 100vw;
+  margin: 0;
 }

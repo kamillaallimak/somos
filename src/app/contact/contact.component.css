@@ -4,12 +4,21 @@
   margin: 0 auto;
 }
 
+.contact-background {
+  background: white;
+  color: black;
+  max-width: 100%;
+}
+
 .fit-image {
   /*width: 100%;*/
   object-fit: cover;
   height: 300px; /* only if you want fixed height */
   width: 500px;
   margin: 0 40px 0 0px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
 }
 
 .fit-adress {
@@ -48,12 +57,30 @@
 }
 
 .submit-btn {
-  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
-    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
   padding: 10px 30px;
-  background: var(--green);
-  color: white;
   font-weight: 600;
   margin: 20px 0 0 130px;
+}
+
+.first,
+.second {
+  width: 100%;
+}
+.second {
+  position: relative;
+  background: black;
+  height: 320px;
+  color: white;
+}
+.third {
+  position: absolute;
+  width: 100px;
+  right: 635px;
+  bottom: 150px;
+}
+
+a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
 }

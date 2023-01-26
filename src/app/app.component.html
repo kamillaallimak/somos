@@ -1,17 +1,12 @@
 <span id="home">
   <div class="logo">
     <a href="./app.component.html">
-      <img
-        class="logoMain"
-        src="../assets/images/WhatsAppLogo.jpeg"
-        width="200"
-        alt="Logo"
-      />
+      <img src="../assets/images/WhatsAppLogo.jpeg" width="200" alt="Logo" />
     </a>
   </div>
   <div id="hero">
     <video [muted]="true" loop autoplay preload="auto">
-      <source src="../assets/videos/SomosCompressedHero.mp4" type="video/mp4" />
+      <source src="./assets/videos/SomosCompressedHero.mp4" type="video/mp4" />
       Your browser does not support the video tag
     </video>
     <!--<div class="texture"></div>-->
@@ -24,19 +19,19 @@
       </h2>
     </div>
   </div>
+  <nav>
+    <div class="container">
+      <ul>
+        <li class="home active"><a href="#home">Home</a></li>
+        <li class="schedule"><a href="#schedule">Schedule</a></li>
+        <li class="courses"><a href="#courses">Courses</a></li>
+        <li class="prices"><a href="#prices">Prices</a></li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 </span>
-<nav>
-  <div class="container">
-    <ul>
-      <li class="home active"><a href="#home">Home</a></li>
-      <li class="schedule"><a href="#schedule">Schedule</a></li>
-      <li class="courses"><a href="#courses">Courses</a></li>
-      <li class="prices"><a href="#prices">Prices</a></li>
-      <li class="about"><a href="#about">About</a></li>
-      <li class="contact"><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
 <section><app-schedule id="schedule"></app-schedule></section>
 <section><app-courses id="courses"></app-courses></section>
