@@ -1,11 +1,14 @@
 .logo {
   position: absolute;
   z-index: 20;
-  top: 0;
-  left: 0;
+  /*top: 0;
+  left: 0;*/
   margin: 20px;
+  background-image: url("../assets/images/WhatsAppLogo.jpeg");
 }
-
+.cards {
+  background-image: url("../assets/images/WhatsAppLogo.jpeg");
+}
 #hero {
   height: 100vh;
   width: 100%;
@@ -77,8 +80,8 @@ nav {
   position: sticky;
   bottom: 0;
   right: 0;
-  border-radius: 0 0 20px 20px;
   z-index: 20;
+  background: var(--green);
 }
 
 nav .container {
@@ -87,6 +90,10 @@ nav .container {
   margin: 0 auto;
   text-align: center;
   padding: 10px;
+}
+
+nav .container ul {
+  margin: 0;
 }
 
 nav .container ul li {
@@ -106,7 +113,7 @@ nav .container ul li a {
 }
 
 nav .container ul li.active {
-  background-color: var(--green);
+  background-color: var(--blue);
   border-radius: 30px;
   transition: 0.3s;
 }

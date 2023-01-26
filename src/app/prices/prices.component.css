@@ -13,3 +13,8 @@
   background: var(--green);
   color: white;
 }
+
+.margin-card {
+  margin: 0 5px 1rem 0;
+  max-width: 15rem;
+}
