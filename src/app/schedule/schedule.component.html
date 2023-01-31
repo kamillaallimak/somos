@@ -1,5 +1,5 @@
 <div class="schedule">
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid blacktext">
     <div class="container">
       <div class="component-title">
         <h1 class="display-4 component-title">Schedule</h1>
@@ -11,10 +11,9 @@
   <section id="timetable">
     <div class="container">
       <ol class="timetable">
-        <li id="Monday" class="day-title"><abbr title="Monday">Mo</abbr></li>
-
-        <div></div>
-        <div></div>
+        <li id="Monday" class="day-title">
+          <abbr title="monday">monday</abbr>
+        </li>
 
         <li class="danceclass fuschia">
           <span class="class-title"><strong>Intermediate</strong> </span>
@@ -30,10 +29,9 @@
           <span class="class-teacher">Juampi & Dulce</span>
         </li>
 
-        <li id="Tuesday" class="day-title"><abbr title="Tuesday">Tu</abbr></li>
-
-        <div></div>
-        <div></div>
+        <li id="Tuesday" class="day-title">
+          <abbr title="tuesday">tuesday</abbr>
+        </li>
 
         <li class="danceclass purple">
           <span class="class-title"><strong>Advanced</strong></span>
@@ -42,7 +40,7 @@
           <span class="class-teacher">Juampi & Sara</span>
         </li>
 
-        <li class="danceclass amber">
+        <li class="danceclass green">
           <span class="class-title">
             <strong> Practica </strong>
             <br />
@@ -52,11 +50,8 @@
         </li>
 
         <li id="Wednesday" class="day-title">
-          <abbr title="Wednesday">We</abbr>
+          <abbr title="wednesday">wednesday</abbr>
         </li>
-
-        <div></div>
-        <div></div>
 
         <li class="danceclass blue">
           <span class="class-title"><strong>Beginner</strong> </span>
@@ -75,13 +70,10 @@
         </li>
 
         <li id="Thursday" class="day-title">
-          <abbr title="Thursday">Th</abbr>
+          <abbr title="thursday">thursday</abbr>
         </li>
 
-        <div></div>
-        <div></div>
-
-        <li class="danceclass amber">
+        <li class="danceclass green">
           <span class="class-title">
             <strong> Technique </strong>
             <br />
@@ -97,21 +89,23 @@
           <span class="class-teacher">Adrian & Dulce</span>
         </li>
 
-        <li id="Friday" class="day-title"><abbr title="Friday">Fr</abbr></li>
-        <div></div>
-        <div></div>
+        <li id="Friday" class="day-title">
+          <abbr title="friday">friday</abbr>
+        </li>
+
         <li class="danceclass blue">
           <span class="class-title"><strong>Beginner</strong> </span>
           <span class="class-time">18:00-19:15</span
           ><span class="class-lvl">Level 1/2</span>
           <span class="class-teacher">Juampi & Dulce/Sara</span>
         </li>
+        <div></div>
 
         <li id="Saturday" class="day-title">
-          <abbr title="Saturday">Sa</abbr>
+          <abbr title="saturday">saturday</abbr>
         </li>
 
-        <li class="danceclass amber">
+        <li class="danceclass beginner green">
           <span class="class-title"
             ><strong>Mini-Workshop</strong>
             <br />
@@ -120,7 +114,7 @@
           <span class="class-time">14:00-14:45</span>
         </li>
 
-        <li class="danceclass amber">
+        <li class="danceclass beginner green">
           <span class="class-title"
             ><strong>Practica</strong>
             <br />
@@ -132,3 +126,34 @@
     </div>
   </section>
 </div>
+
+<!--     
+(click)="openModal('monday1')"
+
+
+  <ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Intermediate class</h4>
+    <button
+      type="button"
+      class="close btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    At this level, we help you become a confident social dancer. We will cover
+    the elements that show up in the milonga as well as different combinations
+    between them. You will also adventure into different dynamics and qualities,
+    focusing on clean execution and strong communication with your partner.
+    <br />
+    <br />
+    To be able to follow this class comfortably and to be a suitable partner for
+    your classmates to practice with, It is important that you have spent enough
+    time in the beginner courses (Tango 1 and Tango ½). Some experience and
+    understanding of the fundamentals are required.
+  </div>
+</ng-template>
+
+ (click)="openModal('one')"
+ -->

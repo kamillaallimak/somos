@@ -1,9 +1,15 @@
 <span id="home">
   <div class="logo">
     <a href="./app.component.html">
-      <img src="../assets/images/WhatsAppLogo.jpeg" width="200" alt="Logo" />
+      <img
+        class="rounded-logo"
+        src="../assets/images/WhatsAppLogo.jpeg"
+        width="200"
+        alt="Logo"
+      />
     </a>
   </div>
+
   <div id="hero">
     <video [muted]="true" loop autoplay preload="auto">
       <source src="./assets/videos/SomosCompressedHero.mp4" type="video/mp4" />
@@ -15,14 +21,14 @@
         Somos Tango Stockholm
       </h1>
       <h2 class="animate__animated animate__fadeInUp animate__delay-2s">
-        Together
+        together
       </h2>
     </div>
   </div>
   <nav>
     <div class="container">
       <ul>
-        <li class="home active"><a href="#home">Home</a></li>
+        <li class="home"><a href="#home">Home</a></li>
         <li class="schedule"><a href="#schedule">Schedule</a></li>
         <li class="courses"><a href="#courses">Courses</a></li>
         <li class="prices"><a href="#prices">Prices</a></li>
@@ -32,6 +38,15 @@
     </div>
   </nav>
 </span>
+<div class="hero-background">
+  <div class="caption">
+    <h2>welcome</h2>
+    <h2 class="animate__animated animate__fadeInDown">together we create</h2>
+    <h1 class="animate__animated animate__zoomInLeft animate__delay-2s">
+      Somos Tango Stockholm
+    </h1>
+  </div>
+</div>
 
 <section class="hidden"><app-schedule id="schedule"></app-schedule></section>
 <section class="hidden"><app-courses id="courses"></app-courses></section>

@@ -4,8 +4,7 @@
 
 .schedule {
   font-family: Poppins, sans-serif;
-  background: var(--green);
-  color: #fff;
+  background: #fff;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -17,7 +16,7 @@
 }
 
 .timetable {
-  padding: 0;
+  padding-left: 0;
 }
 
 .timetable > li {
@@ -29,16 +28,17 @@
   list-style-type: none;
   height: 100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 100%;
   padding: 0.3rem;
   margin: 1px;
 }
 .timetable > li abbr {
   font-size: 0;
+  font-weight: 100;
 }
 .timetable > li abbr:after {
   content: attr(title);
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .timetable > li:before {
@@ -98,44 +98,41 @@
   box-shadow: 0 0 1x rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (min-width: 637px) and (max-width: 860px) {
   .timetable {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(/*330 */ 210px, 1fr));
+    grid-template-columns: repeat(2, minmax(210px, 50%));
     grid-auto-rows: minmax(min-content, 1fr);
     grid-gap: 5px;
+    color: white;
   }
   .timetable .day-title {
     border: none;
     align-items: center;
-    grid-column-start: 1;
-    grid-column-end: -1;
+    grid-column-start: 1/3;
+    grid-column-end: 1;
+    color: black;
   }
-  /*
-  .class-title {
-    font-size: 3rem;
-    
-  }
-  .class-title-sm {
-    font-size: 2.5rem;
-  }
-  .class-time {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  .class-teacher{
-    font-size: 2rem;
-    font-weight: 600;
-  } */
 
   .timetable > li {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.3rem;
+    margin: 1px;
   }
+
   .timetable > li abbr {
     font-size: 0;
   }
   .timetable > li abbr:after {
     content: attr(title);
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .timetable > li:before {
@@ -146,43 +143,40 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 999px) {
+@media only screen and (min-width: 0px) and (max-width: 636px) {
   .timetable {
     grid-template-columns: repeat(auto-fit, minmax(/*330 */ 210px, 1fr));
     grid-auto-rows: minmax(min-content, 1fr);
     grid-gap: 5px;
+    color: white;
   }
+
   .timetable .day-title {
     border: none;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: -1;
+    color: black;
   }
-  /*
-  .class-title {
-    font-size: 3rem;
-    
-  }
-  .class-title-sm {
-    font-size: 2.5rem;
-  }
-  .class-time {
-    font-size: 2.5rem;
-    font-weight: 600;
-  }
-  .class-teacher{
-    font-size: 2rem;
-    font-weight: 600;
-  } */
 
   .timetable > li {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0.3rem;
+    margin: 1px;
   }
+
   .timetable > li abbr {
     font-size: 0;
   }
   .timetable > li abbr:after {
     content: attr(title);
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .timetable > li:before {
@@ -191,13 +185,18 @@
   .timetable > div {
     display: none;
   }
+
+  /*
+  .timetable > li {
+  }
+  */
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 861px) {
   .timetable {
     display: grid;
     grid-template-columns: repeat(6, minmax(150px, 180px));
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-gap: 6px;
     grid-auto-flow: column;
@@ -209,7 +208,8 @@
     line-height: 1.15rem;
   }
   .timetable > li abbr {
-    font-size: 3rem;
+    font-size: 1.7rem;
+    font-weight: 100;
   }
   .timetable > li abbr:after {
     content: attr(title);
@@ -230,5 +230,9 @@
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .danceclass {
+    color: white;
   }
 }

@@ -6,6 +6,7 @@
   margin: 20px;
   background-image: url("../assets/images/WhatsAppLogo.jpeg");
 }
+
 #hero {
   height: 100vh;
   width: 100%;
@@ -53,17 +54,18 @@
 }
 
 #hero .caption {
-  position: relative;
   z-index: 20;
-  text-align: center;
+
   color: var(--amber);
 }
 
 #hero .caption h1 {
+  position: relative;
   text-transform: uppercase;
   font-size: 2em;
   font-family: "Oswald", sans-serif;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 #hero .caption h2 {
@@ -78,7 +80,7 @@ nav {
   top: 0;
   right: 0;
   z-index: 20;
-  background-color: var(--green); /*var(--navbar-scroll);*/
+  background-color: white; /*var(--navbar-scroll);*/
   transition: background-color 0.9s ease-in;
   /*color: var(--navbar-scroll-text);*/
 }
@@ -102,6 +104,10 @@ nav .container ul li {
   border-radius: 30px;
   margin: 5px;
 }
+nav .container ul li:hover {
+  background-color: var(--green);
+  color: #ffffff;
+}
 
 nav .container ul li a {
   display: inline-block;
@@ -120,23 +126,49 @@ nav .container ul li.active a {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  #hero .caption h1 {
-    font-size: 2.5rem;
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  #hero {
+    display: none;
   }
 
-  #hero .caption h2 {
-    font-size: 1.72rem;
+  .logo {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    margin: 20px;
+    background-image: url("../assets/images/WhatsAppLogo.jpeg");
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .rounded-logo {
+    border-radius: 50%;
+  }
+
+  .hero-background {
+    height: 50vh;
+    width: 100%;
+    background: var(--amber);
+    display: flex;
+    align-items: center; /*center vertically*/
+    justify-content: center; /*center horizontally*/
+    /*background-image: url("../assets");*/
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   #hero .caption h1 {
     font-size: 3rem;
   }
 
   #hero .caption h2 {
     font-size: 2rem;
+  }
+
+  .hero-background {
+    display: none;
   }
 }
 
