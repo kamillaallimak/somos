@@ -6,42 +6,6 @@
 @import url("https://fonts.googleapis.com/css?family=cardso:400i|Rubik:400,700&display=swap");
 */
 
-/*text-justify: inter-character;*/
-.crispAlign {
-  text-align: justify;
-  text-justify: inter-character;
-}
-
-.component {
-  padding: 1rem;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.component-title {
-  margin: 90px auto 0 auto;
-}
-
-.btn {
-  cursor: pointer;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 0.65rem;
-  font-weight: bold;
-  letter-spacing: 0.025rem;
-  text-transform: uppercase;
-  border: none;
-  background: var(--green);
-  color: white;
-  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
-    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
-}
-
-.btn:hover {
-  background: (var(--blue));
-}
-
 body {
   font-family: var(--bs-font-sans-serif);
   --navbar-scroll: transparent;
@@ -65,6 +29,63 @@ body {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+}
+
+/*text-justify: inter-character;
+.crispAlign {
+  text-align: justify;
+  text-justify: inter-character;
+}
+*/
+
+.component {
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.component-title {
+  margin: 90px auto 0 auto;
+}
+
+.mybtn {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.01), 0 4px 4px hsl(0deg 0% 0% / 0.01),
+    0 8px 8px hsl(0deg 0% 0% / 0.01), 0 16px 16px hsl(0deg 0% 0% / 0.01);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--amber);
+}
+
+.mybtn-beginner {
+  background: var(--blue);
+  color: white;
+}
+
+.mybtn-intadv {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    var(--fuschia) 50%,
+    var(--purple) 50% 100%
+  );
+}
+
+.mybtn-alllevels {
+  background: var(--green);
+  color: white;
 }
 
 .somos::before {
@@ -100,3 +121,24 @@ body {
   width: 100vw;
   margin: 0;
 }
+
+.beginnerText:hover {
+  background: var(--blue);
+  color: white;
+}
+
+.intermediateText:hover {
+  background: var(--fuschia);
+  color: white;
+}
+
+.advancedText:hover {
+  background: var(--purple);
+  color: white;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 999px) {
+  .component-title {
+    margin-bottom: 20px;
+  }
+    }
