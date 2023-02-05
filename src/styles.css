@@ -44,9 +44,11 @@ body {
   margin: 0 auto;
 }
 
+/*
 .component-title {
   margin: 90px auto 0 auto;
 }
+*/
 
 .mybtn {
   cursor: pointer;
@@ -141,4 +143,4 @@ a:hover {
   .component-title {
     margin-bottom: 20px;
   }
-    }
+}
