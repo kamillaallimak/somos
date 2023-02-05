@@ -99,10 +99,10 @@ body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .cards:nth-child(1):before {
-  background-image: url("../../assets/images/dancerWOman1.jpg");
+  background-image: url("../../assets/images/DulceBackBlack.jpg");
 }
 .cards:nth-child(2):before {
-  background-image: url("../../assets/images/dancerMan.jpg");
+  background-image: url("../../assets/images/AdrianFrontBlack.jpg");
 }
 .cards:nth-child(3):before {
   background-image: url("../../assets/images/dancerWOman2.jpg");

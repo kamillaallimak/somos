@@ -1,10 +1,7 @@
 .logo {
   position: absolute;
   z-index: 20;
-  /*top: 0;
-  left: 0;*/
   margin: 20px;
-  background-image: url("../assets/images/WhatsAppLogo.jpeg");
 }
 
 #hero {
@@ -55,7 +52,6 @@
 
 #hero .caption {
   z-index: 20;
-
   color: var(--amber);
 }
 
@@ -73,6 +69,12 @@
   font-weight: 400;
   font-family: "PT Sans", sans-serif;
   margin: 0;
+}
+
+#hero .caption h1 a,
+#hero .caption h2 a {
+  text-decoration: none; /* no underline */
+  color: var(--amber);
 }
 
 nav {
