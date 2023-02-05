@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs",
+            "baseHref": "/somos/",
+            "outputPath": "dist/somos",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -27,6 +28,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/somos/",
               "budgets": [
                 {
                   "type": "initial",
