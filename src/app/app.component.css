@@ -1,7 +1,7 @@
 .logo {
   position: absolute;
   z-index: 20;
-  top: 200px;
+  top: 32%;
   text-align: center;
   width: 100%;
   display: block;
@@ -92,7 +92,6 @@ nav {
   z-index: 20;
   background-color: white; /*var(--navbar-scroll);*/
   transition: background-color 0.9s ease-in;
-  /*color: var(--navbar-scroll-text);*/
 }
 
 nav .container {
@@ -113,7 +112,9 @@ nav .container ul li {
   background-color: black;
   border-radius: 30px;
   margin: 5px;
+  width: 95px;
 }
+
 nav .container ul li:hover {
   background-color: var(--green);
   color: #ffffff;
@@ -136,22 +137,45 @@ nav .container ul li.active a {
   color: #ffffff;
 }
 
-@media screen and (min-width: 0px) and (max-width: 640px) {
-  #hero {
+@media screen and (min-width: 0px) and (max-width: 369px) {
+  .nav-big-screen {
     display: none;
   }
 
   .logo {
-    position: absolute;
-    z-index: 20;
-    top: 42%;
-    right: 0%;
-    margin: 20px;
-    border-radius: 50%;
+    top: 25%;
   }
 
-  .logo img {
-    width: 200px;
+  #hero {
+    display: none;
+  }
+
+  .hero-background {
+    height: 50vh;
+    width: 100%;
+    background: var(--amber);
+    display: flex;
+    align-items: center; /*center vertically*/
+    justify-content: center; /*center horizontally*/
+    /*background-image: url("../assets");*/
+  }
+
+  .caption {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 640px) {
+  .logo {
+    top: 25%;
+  }
+
+  .nav-big-screen {
+    display: none;
+  }
+
+  #hero {
+    display: none;
   }
 
   .hero-background {
@@ -169,22 +193,44 @@ nav .container ul li.active a {
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 767px) {
+@media screen and (min-width: 641px) and (max-width: 711px) {
+  .logo {
+    top: 25%;
+  }
+  .nav-big-screen {
+    display: none;
+  }
+
   #hero {
     display: none;
   }
 
-  .logo {
-    position: absolute;
-    z-index: 20;
-    top: 30%;
-    left: 100px;
-    margin: 20px;
-    border-radius: 50%;
+  .hero-background {
+    height: 50vh;
+    width: 100%;
+    background: var(--amber);
+    display: flex;
+    align-items: center; /*center vertically*/
+    justify-content: center; /*center horizontally*/
+    /*background-image: url("../assets");*/
   }
 
-  .logo img {
-    width: 250px;
+  .caption {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 712px) and (max-width: 767px) {
+  .nav-small-screen {
+    display: none;
+  }
+
+  .logo {
+    top: 17%;
+  }
+
+  #hero {
+    display: none;
   }
 
   .hero-background {
@@ -203,6 +249,10 @@ nav .container ul li.active a {
 }
 
 @media screen and (min-width: 768px) {
+  .nav-small-screen {
+    display: none;
+  }
+
   #hero .caption h1 {
     font-size: 3rem;
   }

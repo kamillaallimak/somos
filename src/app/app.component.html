@@ -2,7 +2,7 @@
   <div class="logo">
     <a href="#schedule">
       <img
-        src="assets/images/somos-tango-logo-web.png"
+        src="assets/images/logo-somos.png"
         alt="Somos Tango Stockholm Logo"
       />
     </a>
@@ -25,7 +25,7 @@
     </div>
     -->
   </div>
-  <nav>
+  <nav class="nav-big-screen">
     <div class="container">
       <ul>
         <li class="home"><a href="#home">Home</a></li>
@@ -37,13 +37,22 @@
       </ul>
     </div>
   </nav>
+  <nav class="nav-small-screen">
+    <div class="container">
+      <ul>
+        <li class="home"><a href="#home">Home</a></li>
+        <li class="schedule"><a href="#schedule">Schedule</a></li>
+        <li class="courses"><a href="#courses">Courses</a></li>
+      </ul>
+      <ul>
+        <li class="prices"><a href="#prices">Prices</a></li>
+        <li class="about"><a href="#about">About</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 </span>
-<div class="hero-background">
-  <div class="caption">
-    <h2>welcome</h2>
-    <h2 class="animate__animated animate__fadeInDown">together we create</h2>
-  </div>
-</div>
+<div class="hero-background"></div>
 
 <section class="hidden"><app-schedule id="schedule"></app-schedule></section>
 <section class="hidden"><app-courses id="courses"></app-courses></section>
