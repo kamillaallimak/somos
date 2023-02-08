@@ -11,8 +11,8 @@ h1 {
 .fit-image {
   /*width: 100%;*/
   object-fit: cover;
-  height: 320px; /* only if you want fixed height */
-  margin: 30px 0 0 0;
+  height: 320px;
+  margin: 30px 0 0 60px;
 }
 
 .accordion-button.collapsed {

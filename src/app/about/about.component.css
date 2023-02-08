@@ -105,10 +105,10 @@ body {
   background-image: url("../../assets/images/AdrianFrontBlack.jpg");
 }
 .cards:nth-child(3):before {
-  background-image: url("../../assets/images/dancerWOman2.jpg");
+  background-image: url("../../assets/images/sara.jpeg");
 }
 .cards:nth-child(4):before {
-  background-image: url("../../assets/images/dancerMan2.jpg");
+  background-image: url("../../assets/images/JPSara.png");
 }
 .cards-content {
   position: relative;
@@ -127,6 +127,7 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
   line-height: 1.2;
+  text-shadow: 1px 1px 2px black;
 }
 .copy {
   font-family: var(--font-serif);
