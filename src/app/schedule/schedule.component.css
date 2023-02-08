@@ -7,10 +7,10 @@
   background: #fff;
   padding: 1rem;
   margin: 0 auto;
+  max-width: 1024px;
 }
 
 .container {
-  max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -98,52 +98,11 @@
   box-shadow: 0 0 1x rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 637px) and (max-width: 860px) {
-  .timetable {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(210px, 50%));
-    grid-auto-rows: minmax(min-content, 1fr);
-    grid-gap: 5px;
-    color: white;
-  }
-  .timetable .day-title {
-    border: none;
-    align-items: center;
-    grid-column-start: 1/3;
-    grid-column-end: 1;
-    color: black;
-  }
-
-  .timetable > li {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    max-width: 400px;
-    padding: 0.3rem;
-    margin: 1px;
-  }
-
-  .timetable > li abbr {
-    font-size: 0;
-  }
-  .timetable > li abbr:after {
-    content: attr(title);
-    font-size: 2rem;
-  }
-
-  .timetable > li:before {
-    font-size: 1rem;
-  }
-  .timetable > div {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 0px) and (max-width: 636px) {
+  .danceclass {
+    text-align: center;
+  }
+
   .timetable {
     grid-template-columns: repeat(auto-fit, minmax(/*330 */ 210px, 1fr));
     grid-auto-rows: minmax(min-content, 1fr);
@@ -192,7 +151,56 @@
   */
 }
 
-@media only screen and (min-width: 861px) {
+@media only screen and (min-width: 637px) and (max-width: 991px) {
+  .timetable {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(210px, 50%));
+    grid-auto-rows: minmax(min-content, 1fr);
+    grid-gap: 5px;
+    color: white;
+  }
+  .timetable .day-title {
+    border: none;
+    align-items: center;
+    grid-column-start: 1/3;
+    grid-column-end: 1;
+    color: black;
+  }
+
+  .timetable > li {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.3rem;
+    margin: 1px;
+  }
+
+  .timetable > li abbr {
+    font-size: 0;
+  }
+  .timetable > li abbr:after {
+    content: attr(title);
+    font-size: 2rem;
+  }
+
+  .timetable > li:before {
+    font-size: 1rem;
+  }
+  .timetable > div {
+    display: none;
+  }
+
+  .danceclass {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .timetable {
     display: grid;
     grid-template-columns: repeat(6, minmax(150px, 180px));

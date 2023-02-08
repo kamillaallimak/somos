@@ -19,22 +19,22 @@ h1 {
   font-size: 1.25rem;
   font-weight: 300;
   font-family: var(--bs-font-sans-serif);
+  border: hidden !important;
 }
 
 .accordion-button:not(.collapsed) {
   color: #fff !important;
-  background-color: var(--purple) !important;
   border-radius: 10px;
   font-family: var(--bs-font-sans-serif);
   font-size: 1.25rem;
   font-weight: 500;
+  border: hidden !important;
 }
 
 .accordion-button:link,
 .accordion-button:visited,
 .accordion-button:hover,
 .accordion-button:active {
-  background-color: var(--purple);
   color: #fff !important;
   text-decoration: none !important;
   border: hidden !important;
@@ -43,16 +43,98 @@ h1 {
   border-radius: 10px !important;
 }
 
+#flush-headingOne .accordion-button:not(.collapsed) {
+  background-color: var(--blue) !important;
+}
+
+#flush-headingOne .accordion-button:link,
+#flush-headingOne .accordion-button:visited,
+#flush-headingOne .accordion-button:hover,
+#flush-headingOne .accordion-button:active {
+  background-color: var(--blue);
+}
+
+#flush-headingTwo .accordion-button:not(.collapsed) {
+  background-color: var(--fuschia) !important;
+}
+
+#flush-headingTwo .accordion-button:link,
+#flush-headingTwo .accordion-button:visited,
+#flush-headingTwo .accordion-button:hover,
+#flush-headingTwo .accordion-button:active {
+  background-color: var(--fuschia);
+}
+
+#flush-headingThree .accordion-button:not(.collapsed) {
+  background: conic-gradient(
+    var(--fuschia) 0deg 45deg,
+    var(--purple) 45deg 225deg,
+    var(--fuschia) 225deg 360deg
+  ) !important;
+}
+
+#flush-headingThree .accordion-button:link,
+#flush-headingThree .accordion-button:visited,
+#flush-headingThree .accordion-button:hover,
+#flush-headingThree .accordion-button:active {
+  background: conic-gradient(
+    var(--fuschia) 0deg 45deg,
+    var(--purple) 45deg 225deg,
+    var(--fuschia) 225deg 360deg
+  );
+}
+
+#flush-headingFour .accordion-button:not(.collapsed) {
+  background-color: var(--purple) !important;
+}
+
+#flush-headingFour .accordion-button:link,
+#flush-headingFour .accordion-button:visited,
+#flush-headingFour .accordion-button:hover,
+#flush-headingFour .accordion-button:active {
+  background-color: var(--purple);
+}
+
+#flush-headingFive .accordion-button:not(.collapsed) {
+  background-color: var(--green) !important;
+}
+
+#flush-headingFive .accordion-button:link,
+#flush-headingFive .accordion-button:visited,
+#flush-headingFive .accordion-button:hover,
+#flush-headingFive .accordion-button:active {
+  background-color: var(--green);
+}
+
+#flush-headingSix .accordion-button:not(.collapsed) {
+  background-color: black !important;
+}
+
+#flush-headingSix .accordion-button:link,
+#flush-headingSix .accordion-button:visited,
+#flush-headingSix .accordion-button:hover,
+#flush-headingSix .accordion-button:active {
+  background-color: black;
+}
+
 .accordion-button:focus {
   z-index: 3;
   border-color: #fff !important;
   outline: 0;
   box-shadow: 0 0 0 0.25rem #fff !important;
   border-radius: 10px;
+  border: hidden !important;
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23976391'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(180deg);
   border-radius: 10px;
+  border: hidden !important;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  .course-img {
+    display: none;
+  }
 }

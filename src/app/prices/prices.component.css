@@ -7,3 +7,30 @@
   margin: 0 5px 1rem 0;
   max-width: 15rem;
 }
+
+@media screen and (min-width: 0px) and (max-width: 543px) {
+  .margin-card {
+    margin: 0 auto 20px auto;
+    max-width: 27rem;
+  }
+}
+@media screen and (min-width: 544px) and (max-width: 767px) {
+  .margin-card {
+    margin: 0 auto 20px auto;
+    max-width: 16rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .margin-card {
+    margin: 0 auto 20px auto;
+    max-width: 21rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .margin-card {
+    margin: 0 auto 20px auto;
+    max-width: 14rem;
+  }
+}
