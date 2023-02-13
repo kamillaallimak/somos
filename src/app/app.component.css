@@ -1,7 +1,7 @@
 .logo {
   position: absolute;
   z-index: 20;
-  top: 32%;
+  top: 20%;
   text-align: center;
   width: 100%;
   display: block;
@@ -9,13 +9,13 @@
 }
 
 .logo img {
-  width: 300px;
+  width: 40vw;
 }
 
 #hero {
   height: 100vh;
-  width: 100vh;
-  /* background: rgb(89, 6, 89);*/
+  width: 100%;
+  background: var(--purple);
   display: flex;
   align-items: center; /*center vertically*/
   justify-content: center; /*center horizontally*/
