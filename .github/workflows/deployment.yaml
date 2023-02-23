@@ -62,7 +62,7 @@ jobs:
           preset: 'angular'
           tag-prefix: 'v'
           release-count: '10'
-          git-branch: ''
+          git-branch: 'gh-pages'
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.release }}
           body: ${{ steps.changelog.outputs.changelog }}
