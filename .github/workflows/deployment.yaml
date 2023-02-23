@@ -46,7 +46,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB_ }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           output-file: "false"
 
       - name: Create Release
@@ -54,14 +54,13 @@ jobs:
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB_ }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           git-message: 'chore(release): {version}'
           git-user-name: 'Awesome Changelog Action'
           git-user-email: 'awesome_changelog@github.actions.com'
           preset: 'angular'
           tag-prefix: 'v'
-          release-count: '10'
           git-branch: 'gh-pages'
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.release }}
