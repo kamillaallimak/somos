@@ -4,6 +4,7 @@ import { NgbModalRef, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Injectable({
   providedIn: 'root',
 })
+
 export class popupService {
   private modalRef: NgbModalRef | undefined;
   constructor(private popupService: NgbModal) {}
@@ -11,7 +12,7 @@ export class popupService {
   ngOnInit(): void {}
   /*
  openModalFunction(modalName: string) {
-  
+
        switch(modalName) {
          case 'monday1':
            console.log("component One function running...");
@@ -31,6 +32,6 @@ export class popupService {
     //do something before closing the modal
     this.modalRef.close();
   }
-  
+
 */
 }

@@ -28,4 +28,5 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   providers: [popupService],
   bootstrap: [AppComponent],
 })
+
 export class AppModule {}
