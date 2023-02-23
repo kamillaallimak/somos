@@ -73,5 +73,5 @@ jobs:
         run: |
           npm run deploy
 
-      - run: echo "The deployment was ${{ steps.deploy.outcome }} 🎉"
+      - run: echo "The deployment was ${{ steps.deploy.outcome }} 🎉🎉🎉"
         if: ${{ steps.deploy.outcome == 'success' }}
