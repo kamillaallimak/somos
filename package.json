@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy": "ng deploy --name='kenjitagawa' --email=kenji@tagawa.ca --cname=somos.kentech.me --no-silent"
+    "deploy": "ng deploy --name='kenjitagawa' --email=kenji@tagawa.ca --cname=somos.kentech.me --no-silent --base-href=/"
   },
   "private": false,
   "dependencies": {
