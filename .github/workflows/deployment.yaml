@@ -8,17 +8,13 @@ jobs:
   ci:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x]
-
     steps:
       - uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js - 18.x
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '18.x'
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -41,32 +37,6 @@ jobs:
       - name: Build
         run: |
           npm run build:prod
-
-      - name: Conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-file: "false"
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          git-message: 'chore(release): {version}'
-          git-user-name: 'Awesome Changelog Action'
-          git-user-email: 'awesome_changelog@github.actions.com'
-          preset: 'angular'
-          tag-prefix: 'v'
-          git-branch: 'gh-pages'
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.release }}
-          body: ${{ steps.changelog.outputs.changelog }}
-          draft: false
-          prerelease: false
 
       - name: Deploy
         id: deploy
